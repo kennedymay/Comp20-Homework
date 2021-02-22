@@ -114,9 +114,17 @@
 
 .brands-header{
 	font-family: Sans-serif;
-	font-size: 45px;
 	text-align: center;
 }
+
+.brands-header h6{
+	font-size: 35px;
+}
+
+.brands-header p{
+	font-size: 30px;
+}
+
 
 .image2{
 	width: 50%;
@@ -231,6 +239,7 @@
 .services{
 	width: 50%;
 	float: right;
+	font-family: Sans-serif;
 }
 
 .services h6{
@@ -252,6 +261,7 @@
 	margin-top: 70px;
 	font-size: 35px;
 	text-align: center;
+	font-family: Sans-serif;
 }
 
 .contact h6{
