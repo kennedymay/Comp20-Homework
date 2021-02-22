@@ -52,14 +52,14 @@
 }
 
 .home-text{
-	width: 50%;
+	width: 100px;
 	float: left;
 }
 
 .home-text h6{
 	font-size: 25px;
 	width: 400px;
-	margin-top: 100px;
+	margin-top: 190px;
 }
 
 .home-text p{
@@ -86,9 +86,10 @@
 }
 
 .home-pic2 img{
-	width: 70%;
+	width: 300px;
 	margin-top: 170px;
 	padding-left: 170px;
+	padding-right: 50px;
 }
 
 .product{
