@@ -19,7 +19,7 @@
 .header a{
 	color: #1e90ff;
 	text-decoration-line: none;
-	font-size: 70px; 
+	font-size: 85px; 
 	text-align: center;
 	font-family: Sans-serif;
 }
@@ -27,7 +27,7 @@
 .container{
 	width: 100%;
 	height: 100%;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .banner-image img{
@@ -36,7 +36,7 @@
 
 .menu ul{
 	margin: 0;
-  	padding: 0;
+  	padding: 20px;
   	overflow: hidden;
 	background-color: #333;
 	font-family: Sans-serif;
@@ -57,21 +57,21 @@
 }
 
 .home-text h6{
-	font-size: 25px;
-	width: 400px;
-	margin-top: 220px;
+	font-size: 30px;
+	width: 500px;
+	margin-top: 300px;
 }
 
 .home-text p{
-	width: 400px;
-	font-size: 16px;
+	width: 500px;
+	font-size: 25px;
 	line-height: 25px;
 }
 
 .menu ul li{
 	display: inline-flex;
 	list-style: none;
-	margin: 0 45px;
+	margin: 0 60px;
 	cursor: pointer;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .home-pic2 img{
-	width: 70%;
-	margin-top: 170px;
+	width: 80%;
+	margin-top: 300px;
 	padding-left: 170px;
 }
 
@@ -103,16 +103,18 @@
 }
 
 .product h6{
-	font-size: 27px;
+	font-size: 35px;
+	margin-top: 150px;
 }
 
 .product p{
-	padding-bottom: 40px;
+	padding-bottom: 50px;
+	font-size: 25px;
 }
 
 .brands-header{
 	font-family: Sans-serif;
-	font-size: 35px;
+	font-size: 45px;
 	text-align: center;
 }
 
@@ -222,7 +224,7 @@
 
 .servicesimage img{
 	width: 90%;
-	margin-top: 100px;
+	margin-top: 170px;
 	padding-left: 40px;
 }
 
@@ -234,7 +236,7 @@
 .services h6{
 	width: 70%;
 	padding-left: 50px;
-	font-size: 25px;
+	font-size: 35px;
 	text-align: left;
 }
 
@@ -242,22 +244,22 @@
 	width: 70%;
 	margin-top: 20px;
 	padding-left: 50px;
-	font-size: 18px;
+	font-size: 25px;
 	text-align: left;
 }
 
 .contact{
 	margin-top: 70px;
-	font-size: 25px;
+	font-size: 35px;
 	text-align: center;
 }
 
 .contact h6{
-	font-size: 22px;
+	font-size: 32px;
 }
 
 .contact p{
-	font-size: 19px;
+	font-size: 29px;
 }
 
 .email-image{
