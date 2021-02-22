@@ -58,12 +58,12 @@
 
 .home-text h6{
 	font-size: 30px;
-	width: 500px;
+	width: 100%;
 	margin-top: 300px;
 }
 
 .home-text p{
-	width: 500px;
+	width: 100%;
 	font-size: 25px;
 	line-height: 25px;
 }
