@@ -1,0 +1,123 @@
+
+<html>
+
+
+<head>
+<link rel="stylesheet" href="stylesheehw4.css">
+</head>
+	
+<header>
+	<div class = "home">
+	<h1>Joe's Hotdogs</h1>
+	</div>
+</header>
+
+	<div class = "table">
+	<table>
+		<tr>
+    		<th>Food</th>
+    		<th>Price</th>
+  		</tr>
+		<tr>
+			<td>Hotdogs</td>
+			<td>$3.25</td>
+		</tr>
+		<tr>
+			<td>Fries</td>
+			<td>$2</td>
+		</tr>
+		<tr>
+			<td>Soda</td>
+			<td>$1.5</td>
+		</tr>
+	</table>
+	</div>
+	
+	<div class = "info">
+	<p>Discount on all orders over $20</p>
+	</div>
+	<div class = "ordertitle">
+	<h3>Your Order:</h3>
+	</div>
+	
+	<!-- <div id = 'outputtable'>
+		<div class = "order">
+			<div id = 'food'>
+				<p id = 'Hotdogs'>quantityHotdogs</p>
+				<p id = 'Fries'>quantityFries</p>
+				<p id = 'Sodas'>quantitySodas</p>
+				<p id = 'Subtotal'>subtotal</p>
+				<p id = 'Discount'>discount</p>
+				<p id = 'Tax'>taxAmount</p>
+				<p id = 'Total'>total</p>
+			</div>
+		</div>
+
+		<div class = "order">
+			<div id = 'price'> -->
+
+
+
+	<body>
+		<script language="javascript">
+
+//variables
+	hotdogPrice = 3.25;
+	friesPrice = 2;
+	sodaPrice = 1.5;
+	taxPercent = .0625;
+	discountPercent = .1
+
+function getQuantities()
+{	
+	quantityHotdogs = prompt("How many hotdogs would you like?");
+	quantityFries = prompt("How many fries would you like?");
+	quantitySodas = prompt("How many sodas would you like?");
+	document.write("Hotdogs: " + quantityHotdogs);
+	document.write("<br>");
+	document.write("Fries: " + quantityFries);
+	document.write("<br>");
+	document.write("Soda: " + quantitySodas);
+	document.write("<br>");
+}
+	
+
+function calcTotal()
+{
+	subtotal = (hotdogPrice*quantityHotdogs) + (friesPrice*quantityFries) + (sodaPrice*quantitySodas);
+	document.write("Subtotal: $" + subtotal);
+	document.write("<br>");
+	if(subtotal >= 20)
+	{
+		discount = (subtotal * discountPercent);
+		document.write("Discount: $" + parseFloat(discount).toFixed(2));
+		document.write("<br>");
+		subtotal = (subtotal - discount);
+		taxAmount = (taxPercent*subtotal);
+		total = (taxAmount + subtotal);
+		document.write("Tax: $" + parseFloat(taxAmount).toFixed(2));
+		document.write("<br>");
+		document.write("Total: $" + parseFloat(total).toFixed(2));
+		document.write("<br>");
+	} else
+	{
+		taxAmount = (taxPercent*subtotal);
+		total = (taxAmount + subtotal);
+		document.write("Tax: $" + parseFloat(taxAmount).toFixed(2));
+		document.write("<br>");
+		document.write("Total: $" + parseFloat(total).toFixed(2));
+		document.write("<br>");
+	}
+}
+
+getQuantities();
+calcTotal();
+
+
+
+
+		</script>
+
+	</body>
+
+</html>

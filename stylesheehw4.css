@@ -1,0 +1,49 @@
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #add8e6;
+}
+
+
+.home h1{
+	color: #1e90ff;
+	font-size: 55px; 
+	font-family: Sans-serif;
+}
+
+.table{
+	margin-top: 0;
+	box-sizing: border-box;
+	border: 2px solid #dddddd;
+	width: 160px;
+	padding: 5px;
+}
+
+.table th{
+	border: 3px solid #dddddd;
+	padding: 5px;
+	font-size: 20px;
+	font-family: Sans-serif;
+}
+
+.table tr{
+	border: 1px solid #dddddd;
+	padding: 5px;
+	font-size: 20px;
+	font-family: Sans-serif;
+}
+
+.info{
+	font-family: Sans-serif;
+}
+
+
+.ordertitle h3{
+	color: #1e90ff;
+	font-size: 20px; 
+	font-family: Sans-serif;
+	position: relative;
+}
+
+
