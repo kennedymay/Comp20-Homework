@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/css" href = "stylesheethw3.css"?>
+
+
+<Songlist>
+	<Song>
+		<Artist>Byrson Tiller</Artist>
+		<Title>Don't</Title>
+		<MusicGenre>Rhythm and Blues</MusicGenre>
+		<Year>2015</Year>
+		<Title>Exchange</Title>
+		<MusicGenre>Rhythm and Blues</MusicGenre>
+		<Year>2015</Year>
+	</Song>
+
+	<Song>
+		<Artist>Rod Wave</Artist>
+		<Title>Green Light</Title>
+		<MusicGenre>Rhythm and Blues</MusicGenre>
+		<Year>2019</Year>
+		<Title>All Week</Title>
+		<MusicGenre>Rhythm and Blues</MusicGenre>
+		<Year>2020</Year>
+	</Song>
+
+	<Song>
+		<Artist>The Weekend</Artist>
+		<Title>Starboy</Title>
+		<MusicGenre>Rap Soul</MusicGenre>
+		<Year>2016</Year>
+		<Title>Low Life</Title>
+		<MusicGenre>Rap Soul</MusicGenre>
+		<Year>2016</Year>
+	</Song>
+
+	<Song>
+		<Artist>Roddy Ricch</Artist>
+		<Title>Moonwalkin</Title>
+		<MusicGenre>Hip-Hop</MusicGenre>
+		<Year>2019</Year>
+		<Title>Gods Eyes</Title>
+		<MusicGenre>Hip-Hop</MusicGenre>
+		<Year>2019</Year>
+		<Title>High Fashion</Title>
+		<MusicGenre>Hip-Hop</MusicGenre>
+		<Year>2019</Year>
+		<Title>The Box</Title>
+		<MusicGenre>Hip-Hop</MusicGenre>
+		<Year>2019</Year>
+	</Song>
+</Songlist>
