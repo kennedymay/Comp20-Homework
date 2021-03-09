@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	h1 { text-align: center; font-family: sans-serif; text-decoration-line: underline; padding: 10px; font-size: 42px; background-color: #b3d9ff;}
+	p { text-align: center; font-family: sans-serif; padding-bottom: 10px; color: #505050; font-size: 28px }
+	</style>
+</head>
+
+<header>
+	<div id = 'home'>
+	<h1>Lottery</h1>
+	</div>
+</header>
+
+<div id = 'numbers'>
+	<p id = 'winningnumbers'><strong>Picked numbers: </strong></p>
+	<p id = 'luckyball'><strong>Lucky Ball: </strong></p>
+	<p id = 'LotteryNumbers'><strong>Winning numbers: </strong></p>
+	<p id = 'LuckyBallRan'><strong>Lucky Ball: </strong></p>
+	<p id = 'prize'><strong>Your prize is: </strong></p>
+</div>
+
+
+<body style="background-color: #e6f2ff">
+		<script language="javascript">
+
+	var numbers = new Array(5);
+	for (var i = 0; i < numbers.length; i++)
+	{
+		x = (Math.random() * 47 + 1);
+		numbers[i] = parseFloat(x).toFixed(0);
+		numbers = numbers.sort(function(a,b){return a-b});
+	}
+	luckyran = (Math.random() * 17 + 1);
+	luckyran = parseFloat(luckyran).toFixed(0);
+
+	winningnums = prompt("Enter the first 5 winning numbers (1-48): ");
+	winninglucky = prompt("Enter the lucky ball number (1-18): ");
+
+	var winningarr = new Array(5);
+	winningarr = winningnums.split(" ", 5);
+	winningarr = winningarr.sort(function(a,b){return a-b});
+		
+
+	var matchednumbers = 0;
+	for (var i = 0; i < numbers.length; i++) {
+		for (var j = 0; j < winningarr.length; j++){
+			if(numbers[i] == winningarr[j])
+			{
+				matchednumbers = matchednumbers + 1;
+			} else {
+				matchednumbers = matchednumbers;
+			}
+		}
+	}
+
+
+	for (var i = 0; i < 5; i++) document.getElementById("LotteryNumbers").innerHTML += numbers[i] + " ";
+	document.getElementById("LuckyBallRan").innerHTML += luckyran;
+	for (var i = 0; i < 5; i++) document.getElementById("winningnumbers").innerHTML += winningarr[i] + " ";
+	document.getElementById("luckyball").innerHTML += winninglucky;
+
+
+	if(matchednumbers == 0 && luckyran == LuckyBallRan)
+	{
+		var x = "$4";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 1 && luckyran == LuckyBallRan)
+	{
+		var x = "$6";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 2 && luckyran == LuckyBallRan)
+	{
+		var x = "$25";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 2 && luckyran != LuckyBallRan)
+	{
+		var x = "$3";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 3 && luckyran == LuckyBallRan)
+	{
+		var x = "$150";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 3 && luckyran != LuckyBallRan)
+	{
+		var x = "$20";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 4 && luckyran == LuckyBallRan)
+	{
+		var x = "$5000";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 4 && luckyran != LuckyBallRan)
+	{
+		var x = "$200";
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 5 && luckyran == LuckyBallRan)
+	{
+		var x = "7000 a week for life";;
+		document.getElementById("prize").innerHTML += x;
+	} else if (matchednumbers == 5 && luckyran != LuckyBallRan)
+	{
+		var x = "25000 a year for life";
+		document.getElementById("prize").innerHTML += x;
+	} else {
+		var s = "No Prize";
+		document.getElementById("prize").innerHTML += s;
+	}
+
+
+		</script>
+</body>
+
+
+
+</html>
