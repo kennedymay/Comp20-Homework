@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Object</title>
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
+	crossorigin="anonymous"></script>
+	<script language="javascript" src="song.json"></script>
+	
+
+</head>
+<div id = 'part1Header'></div>
+<div id = 'str'></div>
+<div id = 'table'></div>
+ <div id = "filter">
+ 	<div id = "header" > 
+ 	<lu id = "list" ></lu>
+ </div>
+
+
+<body>
+
+
+ 	<form>
+        <select id="Music_Genre">
+             <option>Rhythm and Blues</option>
+              <option>Rap Soul</option>
+              <option>Hip-Hop</option>
+         </select>
+         <button type="button" id="filter">Filter</button>
+
+ 	</form>
+
+	<script language = "javascript">
+	var xhttp = new XMLHttpRequest();
+		$.get("https://kennedymay.github.io/Comp20-Homework/song.json", function(data){
+			document.getElementById('part1Header').innerHTML = "Part 1: ";
+			str = JSON.stringify(data);
+			document.getElementById('str').innerHTML = str;
+
+
+			data.forEach(function(song) {
+					table += "<ul style = 'list-style-type: none;'><li>" +
+					song.Title +  "</li>" 
+					+ "<li>Artist: " + song.Artist + "</li>" 
+					+ "<li>Music Genre: ";
+
+					for (i = 0; i < song.Music_Genre.length; i++) {
+					 	table += song.Music_Genre[i];
+					}
+
+					table += "</li>";
+					table += "<li>Year: " + song.Year +  "</li></ul><br />";
+
+				})
+
+			document.getElementById('table').innerHTML = table;
+
+
+			$("#filter").onclick(function() {
+				var Music_Genre = $("#Music_Genre option: selected".text());
+				document.getElementById('header'.innerHTML) = "Music Genre: " + Music_Genre;
+
+				data.forEach(function(song) {
+					for (i = 0; i < song.Music_Genre.length; i++) {
+						if (song.Music_Genre[i].localeCompare(Music_Genre) == 0) {
+							string += string + "<li>" + song.Title + "</li>";
+						}
+					}
+
+				})
+				document.getElementById("list").innerHTML = string;
+
+			})
+		})
+
+	</script>
+
+
+</body>
+</html>
+
+
+
