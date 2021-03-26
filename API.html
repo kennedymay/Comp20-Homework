@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Weather API</title>
+	<meta charset="utf-8"/>
+	<script>
+		function getTeams() {
+			request = new XMLHttpRequest();
+		
+ 
+		request.open("GET", "https://www.balldontlie.io/api/v1/teams/", true)
+
+			request.onreadystatechange = function() {
+				 
+				if (request.readyState == 4 && request.status == 200) {
+
+					result = request.responseText;
+					
+					document.getElementById("data").innerHTML = result;
+					teams = JSON.parse(result);
+
+					
+					// document.getElementById('data').innerHTML = "Team name: " + teams["full_name"];
+					
+				/*	document.getElementById("data").innerHTML ="current temp in boston: " + weather["current"]["weather"][0]["description"]; 
+				*/	
+				}
+
+			}
+			request.send();
+		}
+	</script>
+</head>
+
+
+<body onload="getTeams()">
+
+	<h1>NBA Teams</h1>
+	<div id="data">Loading...</div>
+</body>
+</html>
